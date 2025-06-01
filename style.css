@@ -1,0 +1,173 @@
+/* Gaya Umum untuk Seluruh Halaman */
+body {
+    font-family: 'Arial', sans-serif; /* Jenis huruf dasar */
+    line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Warna background utama yang lembut */
+    color: #333; /* Warna teks utama */
+}
+
+/* Kontainer untuk membatasi lebar konten dan menengahkan */
+header, main, footer {
+    width: 90%;
+    max-width: 960px; /* Lebar maksimum konten */
+    margin: 20px auto; /* Menengahkan kontainer */
+    padding: 20px;
+    background-color: #ffffff; /* Background putih untuk area konten */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Bayangan halus */
+    border-radius: 8px; /* Sudut yang sedikit membulat */
+}
+
+/* Gaya untuk Header */
+header {
+    background-color: #2c3e50; /* Warna background header (biru tua/abu-abu) */
+    color: #ffffff; /* Warna teks di header */
+    text-align: center;
+    border-bottom: 5px solid #1abc9c; /* Aksen warna hijau toska */
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em; /* Ukuran font untuk judul utama situs */
+}
+
+/* Gaya untuk Navigasi */
+nav ul {
+    list-style-type: none; /* Menghilangkan bullet points */
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Membuat item navigasi sejajar */
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    color: #ffffff; /* Warna link di navigasi */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Efek transisi halus */
+}
+
+nav ul li a:hover, nav ul li a.active { /* Efek saat kursor di atas link atau link aktif */
+    background-color: #1abc9c; /* Aksen warna hijau toska */
+    color: #ffffff;
+}
+/* (Anda bisa menambahkan class="active" pada link Beranda di index.html untuk menandai halaman aktif)
+   Contoh di HTML: <li><a href="index.html" class="active">Beranda</a></li> */
+
+
+/* Gaya untuk Konten Utama (Main) */
+main section {
+    margin-bottom: 30px; /* Jarak antar bagian */
+    padding: 20px;
+    background-color: #fdfdfd; /* Sedikit beda dari background utama konten */
+    border-left: 4px solid #1abc9c; /* Aksen garis di kiri section */
+    border-radius: 0 8px 8px 0; /* Sudut membulat di sisi kanan */
+}
+
+main section:last-child {
+    margin-bottom: 0;
+}
+
+main h2 {
+    color: #2c3e50; /* Warna judul bagian (biru tua/abu-abu) */
+    font-size: 2em;
+    margin-top: 0;
+}
+
+main h3 {
+    color: #34495e; /* Warna sub-judul bagian (biru abu-abu lebih muda) */
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+main p, main ul {
+    margin-bottom: 15px; /* Jarak bawah untuk paragraf dan daftar */
+}
+
+main ul {
+    padding-left: 20px; /* Indentasi untuk daftar */
+}
+
+main strong {
+    color: #16a085; /* Warna untuk teks yang ditebalkan (hijau lebih tua) */
+}
+
+/* Gaya untuk Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50; /* Warna background footer (sama seperti header) */
+    color: #bdc3c7; /* Warna teks di footer (abu-abu muda) */
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Gaya Khusus untuk Halaman Produk (produk.html) */
+
+.produk-item {
+    background-color: #ffffff; /* Background putih untuk kartu produk */
+    border: 1px solid #e0e0e0; /* Garis batas tipis untuk kartu */
+    border-radius: 8px; /* Sudut membulat */
+    padding: 20px; /* Ruang di dalam kartu produk */
+    margin-bottom: 20px; /* Jarak antar kartu produk */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Bayangan halus untuk efek kedalaman */
+    /* Untuk tata letak berdampingan di layar lebih besar, kita bisa tambahkan Flexbox/Grid nanti jika diinginkan */
+}
+
+.produk-item h3 {
+    margin-top: 0; /* Menghilangkan margin atas default dari h3 di dalam kartu */
+    color: #1abc9c; /* Warna judul produk (hijau toska) */
+    font-size: 1.5em;
+}
+
+.produk-item p {
+    margin-bottom: 10px; /* Mengurangi jarak bawah paragraf di dalam kartu */
+    font-size: 0.95em;
+}
+
+.tombol-pesan {
+    display: inline-block; /* Agar bisa diatur padding dan margin */
+    background-color: #1abc9c; /* Warna background tombol (hijau toska) */
+    color: #ffffff !important; /* Warna teks tombol (putih), !important untuk memastikan menimpa gaya link nav jika ada konflik */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    border-radius: 5px; /* Sudut tombol membulat */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Efek transisi halus */
+    margin-top: 10px; /* Sedikit jarak di atas tombol */
+}
+
+.tombol-pesan:hover {
+    background-color: #16a085; /* Warna background tombol saat hover (hijau lebih tua) */
+    color: #ffffff !important;
+}
+
+/* Gaya untuk bagian request khusus */
+#request-khusus {
+    background-color: #e8f6f3; /* Background berbeda untuk menyorot bagian ini */
+    border-left-color: #16a085; /* Warna border kiri yang lebih tua agar serasi */
+}
+
+#request-khusus h2 {
+    color: #16a085; /* Warna judul yang serasi */
+}
+
+/* Penyesuaian untuk link navigasi aktif */
+nav ul li a.active {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
